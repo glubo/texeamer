@@ -1,0 +1,14 @@
+{
+    "name": "glubo/texeamer",
+    "description": "Make presentations using Texy!",
+    "require": {
+        "texy/texy": "*",
+        "nette/nette": "*"
+    },
+    "authors": [
+        {
+            "name": "Petr Sykora",
+            "email": "petr.sykora@gmail.com"
+        }
+    ]
+}
