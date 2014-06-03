@@ -1,0 +1,12 @@
+{block navig}
+	<li n:if="$user->loggedIn"><a n:href="edit $presentation->id">Edit this presentation</a></li>
+{/block}
+
+{block content}
+<div class="date">{$presentation->created_at|date:'F j, Y'}</div>
+
+<h1 n:block=title>{$presentation->title}</h1>
+
+<div class="presentation">{!$presentation->content|texeamer}</div>
+
+

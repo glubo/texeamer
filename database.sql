@@ -1,4 +1,17 @@
 BEGIN;
+DROP TABLE IF EXISTS "presentation" CASCADE;
+CREATE TABLE "presentation" (
+  "id" serial NOT NULL,
+  "title" varchar(255) NOT NULL,
+  "content" text NOT NULL,
+  "created_at" timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  PRIMARY KEY ("id")
+);
+
+INSERT INTO "presentation" ("id", "title", "content", "created_at") VALUES
+(1,	'Prvni prezentace',	' his seemed certain carbon-ba',	'2009-05-11 03:31:16');
+
+
 DROP TABLE IF EXISTS "posts" CASCADE;
 CREATE TABLE "posts" (
   "id" serial NOT NULL,
@@ -7,6 +20,7 @@ CREATE TABLE "posts" (
   "created_at" timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
   PRIMARY KEY ("id")
 );
+
 
 DROP TABLE IF EXISTS "comments";
 CREATE TABLE "comments" (

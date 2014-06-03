@@ -3,8 +3,12 @@
     "description": "Make presentations using Texy!",
     "require": {
         "texy/texy": "*",
-        "nette/nette": "*"
+        "nette/nette": "*",
+		"dg/adminer-custom": "1.*"
     },
+    "require-dev": {
+		"nette/tester": "*"
+	},
     "authors": [
         {
             "name": "Petr Sykora",
